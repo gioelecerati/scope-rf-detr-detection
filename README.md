@@ -8,9 +8,7 @@ video frame and returns the frame annotated with bounding boxes for the 80 COCO 
 
 Live webcam → RF-DETR on an RTX 3080 → annotated stream back, in real time (~23 FPS):
 
-<video src="https://github.com/gioelecerati/scope-rf-detr-detection/raw/main/assets/demo.mp4" controls muted width="100%"></video>
-
-> If the player above doesn't load, [watch the demo here](assets/demo.mp4).
+https://github.com/user-attachments/assets/a809b20b-7f3a-4732-92f4-e6ca65354ed5
 
 Example single-frame detection:
 
