@@ -1,0 +1,19 @@
+[project]
+name = "scope-rfdetr-detection"
+version = "0.1.0"
+description = "RF-DETR object detection plugin for Scope (Roboflow RF-DETR)"
+requires-python = ">=3.12"
+# rfdetr is pinned to 1.5.0: it is the newest release that requires
+# transformers<5, matching Scope's pinned transformers 4.57.x. rfdetr>=1.6
+# requires transformers>=5.1 which conflicts with Scope's diffusion stack.
+dependencies = [
+    "rfdetr==1.5.0",
+    "supervision>=0.25.0",
+]
+
+[project.entry-points."scope"]
+scope_rfdetr_detection = "scope_rfdetr_detection.plugin"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
